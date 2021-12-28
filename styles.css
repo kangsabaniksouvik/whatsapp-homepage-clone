@@ -255,10 +255,11 @@ body{
     width: 200px;
     height: 250px;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .sub-heading{
-    padding: 30px;
+    padding: 30px 0px;
     color: #dadada;
     font-weight: 700;
 }
@@ -266,6 +267,10 @@ body{
 .option-choice{
     text-decoration: none;
     color:#dadada;
+}
+
+.option-choice:hover{
+    text-decoration: underline;
 }
 
 /* footer */
@@ -284,6 +289,10 @@ body{
 .creator a{
     text-decoration: none;
     color: #128c7e;
+}
+
+.creator a:hover{
+    text-decoration: underline;
 }
 
 /* =====MEDIA QUERIES===== */
