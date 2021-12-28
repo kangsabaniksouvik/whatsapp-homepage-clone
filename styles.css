@@ -15,6 +15,8 @@ body{
     align-items: center;
 }
 
+/* Header */
+
 .header{
     margin: 0;
     padding: 0;
@@ -294,6 +296,46 @@ body{
 .creator a:hover{
     text-decoration: underline;
 }
+/* If the screen size is less than 820px */
+
+.if-less-than-820{
+    background: #128c7e;
+    display: none;
+}
+
+.big-photo{
+    width: 100px;
+    height: 100px;
+}
+
+.info-820{
+    width: 70%;
+    text-align: center;
+    font-size: 30px;
+    color: #e7f0e4;
+}
+
+.footer-820{
+    font-weight: 700;
+    color: #dadada;
+}
+
+.name-820, .full-code-820{
+    text-decoration: none;
+}
+
+.name-820{
+    color: #273443;
+}
+
+.full-code-820{
+    color:#50c4b6 ;
+}
+
+.name-820:hover, .full-code-820:hover{
+    text-decoration: underline;
+}
+
 
 /* =====MEDIA QUERIES===== */
 
@@ -314,5 +356,28 @@ body{
         align-items: center;
         width: 50%;
         gap: 10%;
+    }
+}
+
+/* Media query when screen is less than 820px */
+@media (max-width: 819px) {
+
+    .body{
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+    .header, .section-1, .section-2, .explore, .wp-com-down-help, .footer{
+        display: none;
+    }
+
+    .if-less-than-820{
+        width: 100%;
+        height: 85vh;
+        padding: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
