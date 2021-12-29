@@ -362,10 +362,9 @@ body{
 /* Media query when screen is less than 820px */
 @media (max-width: 819px) {
 
-    .body{
-        margin: 0;
-        padding: 0;
-        justify-content: center;
+    *{
+        background: #128c7e;
+        overflow: hidden;
     }
     .header, .section-1, .section-2, .explore, .wp-com-down-help, .footer{
         display: none;
